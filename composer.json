@@ -1,0 +1,22 @@
+{
+    "name": "php-tool-kit/console-flow",
+    "description": "Fluxo de rotinas para a linha de comando.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Everton da Rosa",
+            "email": "everton3x@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "league/climate": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "PTK\\Console\\Flow\\": "src",
+            "Sample\\": "Sample"
+        }
+    }
+}
