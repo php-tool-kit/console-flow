@@ -18,5 +18,12 @@
             "PTK\\Console\\Flow\\": "src",
             "Sample\\": "Sample"
         }
+    },
+    "scripts": {
+        "push": [
+            "git add .",
+            "git commit",
+            "git push"
+        ]
     }
 }

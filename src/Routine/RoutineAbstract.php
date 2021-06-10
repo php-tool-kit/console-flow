@@ -107,6 +107,10 @@ abstract class RoutineAbstract implements RoutineInterface {
                 $maxSize = $size;
             }
         }
+        
+        if(($maxSize % 2) === 0) {
+            $maxSize += 2;
+        }
 
         return $maxSize;
     }
