@@ -59,8 +59,8 @@ abstract class RoutineAbstract implements RoutineInterface {
         $maxSizeLabel = $this->detectMaxSizeLabel($labels);
 
         foreach ($labels as $key => $label) {
-            $keyPadded = str_pad($key, $maxSizeLabel, ' ', STR_PAD_BOTH);
-            $console->out("[$keyPadded] $label");
+            $keyPadded = str_pad($key, $maxSizeLabel, ' ', STR_PAD_LEFT);
+            $console->out("[ $keyPadded ] $label");
         }
 
         $console->br();
@@ -108,9 +108,9 @@ abstract class RoutineAbstract implements RoutineInterface {
             }
         }
         
-        if(($maxSize % 2) === 0) {
-            $maxSize += 2;
-        }
+//        if(($maxSize % 2) === 0) {
+//            $maxSize += 2;
+//        }
 
         return $maxSize;
     }
